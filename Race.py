@@ -5,8 +5,8 @@ import time
 
 class Horse:
     def __init__(self, speed, y, image, window):
-        self.x_pos = 50   # 시작 위치
-        self.y_pos = y    # y 위치
+        self.x_pos = 0
+        self.y_pos = y
         self.image = image
         self.window = window
         self.dice = Dice(speed)
@@ -20,6 +20,7 @@ class Horse:
 
     def crossed_finish_line(self, finish_x):
         return self.x_pos >= finish_x
+
 
 
 
